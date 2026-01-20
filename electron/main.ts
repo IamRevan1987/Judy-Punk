@@ -1,5 +1,6 @@
 import { app, BrowserWindow } from 'electron'
 import path from 'node:path'
+import { setupIPC } from './ipc'
 
 // The built directory structure
 //
@@ -52,4 +53,7 @@ app.on('activate', () => {
     }
 })
 
-app.whenReady().then(createWindow)
+app.whenReady().then(() => {
+    setupIPC()
+    createWindow()
+})

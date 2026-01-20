@@ -1,0 +1,55 @@
+:root {
+  --bg-dark: #0a0a0f;
+  --bg-panel: #13131a;
+  --bg-input: #050508;
+  --text-primary: #e0e0e0;
+  --text-secondary: #9494a0;
+  --accent-green: #00ff9d;
+  --accent-green-dim: rgba(0, 255, 157, 0.1);
+  --border-color: #2a2a35;
+  --border-focus: #00ff9d;
+  --font-mono: 'Courier New', Courier, monospace;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow: hidden; /* App-like feel */
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Utility classes */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.h-full { height: 100%; }
+.w-full { width: 100%; }
+.text-accent { color: var(--accent-green); }
+.font-mono { font-family: var(--font-mono); }
