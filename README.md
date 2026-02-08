@@ -1,14 +1,14 @@
 # Judy-Punk 🤘🧑‍💻
 
-**Local AI SysDdmin & Cybersecurity Companion**
+**Local-First AI SysDdmin & Cybersecurity Companion**
 
 Judy-Punk is a desktop app I’m building to explore what a *responsible*, security-minded AI assistant could 
 look like for IT and Cybersecurity work.
 
-Think of it less as a “chatbot” and more as a calm, senior IT pro who:
-- talks through system health in plain English  
-- helps you reason about what’s going on  
-- never silently takes control of your machine  
+The current iteration has been tested with several Ollama LLM models. The current working model that is proving to be effective is Ministral 3 3B. Judy-Punk is definitely a capable IT companion, and when connected to a repository of updated material, is very effective at assisting with duties like a senior IT pro.
+- "Tutor Mode": Essentially a demo to test the effectiveness of the chatbot without giving the AI any authority to do anything but answer questsions adn quiz a person at their request.
+- "Standard User": Has a list of standard commands that are allowed to use such as "ls" and "grep", but will not perform any actions like copy/move/break the internet.
+- "Agent Assist": Activates a list of tools that further enhance the AI's ability to assist in Cyber Security defense, such as scanning networks and evaluating log files. It is suggested by the owner that this mode be used with caution. 
 
 This project is intentionally **local-first**, **transparent**, and **guardrail-heavy** by design.
 
@@ -18,13 +18,13 @@ This project is intentionally **local-first**, **transparent**, and **guardrail-
 
 ## 🚦 Project status
 
-**Early beta (v0.1.x)**  
+**Early beta (v0.2.1)**  
 Actively under development. Features, structure, and UX will evolve.
 
 This version is focused on:
-- proving the concept  
-- demonstrating design discipline  
-- showing how I think about systems, security, and AI tooling  
+- Bringing a conccept to life.
+- Demonstrating design discipline  
+- Showing how I think about systems, security, and AI tooling  
 
 ---
 
@@ -76,7 +76,7 @@ Most decisions are documented in the `Documentation/` folder.
 npm install
 npm run dev
 
-This project is still evolving, so expect rough edges.
+This project is still evolving, so expect rough edges. The app is officially stable as of now. 
 
 📂 Documentation
 
